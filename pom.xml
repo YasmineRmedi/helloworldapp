@@ -2,11 +2,17 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.formation.integcontinue</groupId>
-  <artifactId>hello-world-app</artifactId>
+  <artifactId>hello-worldapp</artifactId>
   <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>hello-world-app</name>
+  <name>hello-worldapp</name>
   <url>http://maven.apache.org</url>
+
+  <properties>
+    <!-- Set Java version -->
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+  </properties>
 
   <dependencies>
     <dependency>
@@ -22,13 +28,12 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.8.1</version> 
+        <version>3.1</version>
         <configuration>
-          <source>17</source>
+          <source>11</source>
           <target>11</target>
         </configuration>
       </plugin>
     </plugins>
   </build>
 </project>
-
